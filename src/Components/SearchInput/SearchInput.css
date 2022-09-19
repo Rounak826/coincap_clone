@@ -8,7 +8,9 @@
     padding: 0.4rem;
 }
 .input-container svg{
-    height: 1.3rem;
+    height: 1em;
+    width: 1.18em;
+    cursor: pointer;
 }
 .input-container.border{
     border: 0.1rem solid #111;

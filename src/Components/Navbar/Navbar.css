@@ -1,0 +1,47 @@
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(34,36,38,.15);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .group{
+    width: fit-content;
+    display: inherit;
+}
+nav .item{
+    align-self: center;
+    width: fit-content;
+    padding: 0.92em 1.14em;
+}
+nav .item a{
+    font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1;
+}
+nav img{
+    min-width: 80px ;
+}
+nav .item button.transparent{
+    background-color: rgba(240, 248, 255, 0);
+    height: max-content;
+    border: none;
+    cursor: pointer;
+}
+nav svg{
+    width: 50%;
+    height: 1em;
+    width: 1.18em;
+    width: auto;
+
+    
+}
