@@ -1,0 +1,36 @@
+.input-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+}
+.input-container svg{
+    height: 1.3rem;
+}
+.input-container.border{
+    border: 0.1rem solid #111;
+}
+.input-container input{
+    border: none;
+    outline: none;
+    transition: all 0.4s ease-out;
+    width: 0;
+}
+.inactivei input{
+    transform: scaleX(0);
+}
+.active input{
+    width: 10rem!important;
+    transform: scaleX(1);
+    
+}
+.inactive.border{
+    border: 1px solid rgba(255, 255, 255, 0);
+} 
+
+.active.border{
+    border: 1px solid rgba(0,0,0);
+} 

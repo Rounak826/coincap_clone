@@ -1,0 +1,17 @@
+.btn_primary{
+    min-height: 1em;
+    width: fit-content;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #18C683;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 15px -3px;
+    transition: transform 0.2s ease 0s;
+}
+.btn_primary:hover{
+    transform: translateY(-2px);
+}
