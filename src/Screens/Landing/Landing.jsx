@@ -12,7 +12,7 @@ export default function Landing() {
   return (
     <section className='landing'>
       <div className="grad_section">
-        <div className="overview">
+        <div className="container overview">
           <OverviewItem title={"Market Cap"} value={"$1.15T"}/>
           <OverviewItem title={"EXCHANGE VOL"} value={"$52.36B"}/>
           <OverviewItem title={"ASSETS"} value={"2,295"}/>
