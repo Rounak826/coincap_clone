@@ -28,7 +28,7 @@ export default function Table() {
                 </tr>
             </thead>
             <tbody>
-                {coins&&coins.map(data=><TableRow {...data}/>)}
+                {coins&&coins.map(data=><TableRow key={data.id} {...data}/>)}
 
             </tbody>
         </table>
