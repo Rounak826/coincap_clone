@@ -6,6 +6,10 @@ nav{
     border-top: 0;
     border-right: 0;
     border-left: 0;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: #fff ;
 }
 nav .container{
     display: flex;
