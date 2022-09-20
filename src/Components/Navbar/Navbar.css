@@ -15,11 +15,20 @@ nav .container{
 nav .group{
     width: fit-content;
     display: inherit;
+    align-items: center;
+    height: 100%;
 }
 nav .item{
+    display: flex;
     align-self: center;
+    align-items: center;
     width: fit-content;
+    height: 100%;
     padding: 0.92em 1.14em;
+}
+nav .item:has(a):hover{
+    background: rgba(0,0,0,.03);
+    color: rgba(0,0,0,.95);
 }
 nav .item a{
     font-family: Lato,Helvetica Neue,Arial,Helvetica,sans-serif;
@@ -39,7 +48,7 @@ nav .item button.transparent{
 }
 nav svg{
     width: 50%;
-    height: 1em;
+    height: 1.1em;
     width: 1.18em;
     width: auto;
 
