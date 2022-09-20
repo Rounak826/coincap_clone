@@ -1,0 +1,76 @@
+.table_container{
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 15px -3px !important;
+    border: none !important;
+    background-color: #fff;
+    position: relative;
+    top: -6rem;
+    border-radius: 0.4rem;
+    white-space: nowrap;
+    border-collapse: separate;
+    border-spacing: 0;
+
+}
+.table_container th{
+    padding: 0.9em 0.8em;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,.6);
+    border-top: none;
+    border-left: none;
+}
+.table_container tr{
+    color: rgba(0,0,0,.87);
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.table_container td{
+    border-top: none;
+    border-left: none;
+    padding: 0.78em;
+    font-size: 1em;
+    font-weight: 400;
+    border-top: 1px solid rgba(34,36,38,.1);
+}
+.table_container .flex-row{
+    width: 100%;
+    display:flex;
+    gap: 0.3rem;
+}
+.table_container img{
+    width: 30px;
+    height: 30px;
+}
+.table_container .info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.table_container .info span{
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+.increased{
+    animation: blinkGreen 1s;
+}
+.decreased{
+    animation: blinkRed 1s;
+}
+
+@keyframes blinkRed {
+    0% {background-color: #fff;}
+    50% {background-color: rgba(255, 179, 179, 0.51);}
+    100% {background-color: #fff;}
+}
+  
+@keyframes blinkGreen {
+    0% {background-color: #fff;}
+    50% {background-color: rgba(195, 255, 179, 0.512);}
+    100% {background-color: #fff;}
+}
+
+
+  @media only screen and (max-width: 767px){
+    .table_container{
+        border-radius: 0!important;
+      }
+  }
