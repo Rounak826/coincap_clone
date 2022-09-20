@@ -17,11 +17,14 @@ export const coinSlice = createSlice({
         },
         getCoinsFail: (state)=>{
             state.isLoading = false
+        },
+        increaseLength:(state)=>{
+            state.length +=50
         }
 
     }
 })
 export const selectlength = (state)=> state.coins.length
 export const selectCoinsList = (state)=> state.coins.list
-export const {getCoinsFetch,getCoinsSuccess,getCoinsFail} = coinSlice.actions;
+export const {getCoinsFetch,getCoinsSuccess,getCoinsFail,increaseLength} = coinSlice.actions;
 export default coinSlice.reducer

@@ -3,15 +3,34 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  padding-top: 4.5rem;
+  padding-bottom: 18rem;
+  position: relative;
+  background-color: #ECEFF1;
 }
 a{
   text-decoration: none;
+}
+.center-aligned{
+  text-align: center;
+}
+.left-aligned{
+  text-align: left;
+}
+.right-aligned{
+  text-align: right;
 }
 
 .grad_section{
   background-image: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
   border: none !important;
 
+}
+.hidden-md{
+  display: none;
+}
+.hidden-xs{
+  display: none;
 }
 @media only screen and (min-width: 1200px)
 {
@@ -20,6 +39,13 @@ a{
     margin-left: auto!important;
     margin-right: auto!important;
   }
+  .hidden-md{
+    display:  table-cell;;
+  }
+  .hidden-xs{
+    display:  table-cell;;
+  }
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px)
 {
@@ -27,6 +53,9 @@ a{
     width: 933px;
     margin-left: auto!important;
     margin-right: auto!important;
+  }
+  .hidden-xs{
+    display:  table-cell;;
   }
 
 }
