@@ -1,9 +1,16 @@
 .App{
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
 }
 a{
   text-decoration: none;
+}
+
+.grad_section{
+  background-image: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+  border: none !important;
+
 }
 @media only screen and (min-width: 1200px)
 {
