@@ -1,16 +1,16 @@
 footer{
     width: 100%;
     padding: 3em;
-    position: absolute;
-    bottom: 0;
 }
 footer .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 footer .col{
     width: 25%;
+    min-width: 160px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -50,8 +50,8 @@ footer a:hover{
     opacity: 1;
 }
 footer .banner svg{
-    width: 50%!important;
-    height: 100%;
+    width: 135px;
+    height: 40px;
     z-index: 12;
     opacity: 0.6;
 }
