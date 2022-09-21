@@ -31,7 +31,7 @@ function selectClass(prev,now){
     if(!prev) return ""
     prev = Number(prev).toFixed(2)
     now = Number(now).toFixed(2)
-    console.log(prev,now)
+    //console.log(prev,now)
     
     if(prev===now){
         return ""
