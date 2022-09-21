@@ -1,16 +1,19 @@
 import React from 'react'
 import usePrevious from '../../usePrevious';
-
+import Logo from '../../assests/logo_mark.png'
 export default function TableRow({ rank, name, priceUsd, marketCapUsd, vwap24Hr, supply, volumeUsd24Hr, changePercent24Hr, symbol }) {
     const prev = usePrevious(priceUsd)
     return (
-        <tr className={selectClass(prev,priceUsd)}>
+        <tr className={selectClass(prev, priceUsd)}>
             <td colSpan={1} className='center-aligned'>{rank}</td>
             <td colSpan={2} className='left-aligned'>
                 <div className="flex-row">
 
 
-                    <img src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`} alt={name} loading="lazy" />
+                    <img src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`} alt={name} loading="lazy"
+                        onError={(e) => {
+                            e.currentTarget.src =Logo
+                        }} />
                     <div className="info">
                         <p>{name}</p>
                         <span>{symbol}</span>
@@ -27,18 +30,18 @@ export default function TableRow({ rank, name, priceUsd, marketCapUsd, vwap24Hr,
         </tr>
     )
 }
-function selectClass(prev,now){
-    if(!prev) return ""
+function selectClass(prev, now) {
+    if (!prev) return ""
     prev = Number(prev).toFixed(2)
     now = Number(now).toFixed(2)
-    console.log(prev,now)
-    
-    if(prev===now){
+    //console.log(prev,now)
+
+    if (prev === now) {
         return ""
     }
-    else if(prev<now){
+    else if (prev < now) {
         return "increased"
-    }else{
+    } else {
         return "decreased"
     }
 }

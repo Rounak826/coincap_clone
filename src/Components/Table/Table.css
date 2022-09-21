@@ -19,13 +19,27 @@
     border-top: none;
     border-left: none;
 }
+.table_container th .rank{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table_container th .rank svg{
+    width: 14px;
+    aspect-ratio: 1/1;
+    position: relative;
+    top:2px
+}
 
 .table_container tr {
     color: rgba(0, 0, 0, .87);
     border-collapse: separate;
     border-spacing: 0;
 }
-.table_container tr:hover{
+.table_container tr:has(td):hover{
     background-color: #ECEFF1!important;
     cursor: pointer;
 } 
@@ -41,12 +55,12 @@
 .table_container .flex-row {
     width: 100%;
     display: flex;
+    align-items: stretch;
     gap: 0.3rem;
 }
 
 .table_container img {
-    width: 30px;
-    height: 30px;
+   max-height: 2.2em;
 }
 
 .table_container .info {
