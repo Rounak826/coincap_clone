@@ -22,7 +22,7 @@ export default function Landing() {
         </div>
       </div>
       <Table />
-      <PrimaryButton name={"View More"} onClick={viewMoreHandler} style={{position:'relative', top:'-4rem'}}/>
+      <PrimaryButton name={"View More"} onClick={viewMoreHandler} />
     </section>
   )
 }
